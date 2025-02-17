@@ -79,11 +79,16 @@
   filter: blur(60px);
   position: absolute;
   bottom: -15%;
-  right: -9%;
+  right: -8%;
   z-index: 9;
   border-radius: 50%;
 }
 
 .custom-grid {
   grid-template-columns: 1fr 114px 266px 1fr 1fr;
+}
+
+.custom-grid-1 {
+  grid-template-rows: auto 450px;
+  max-height: 1167px;
 }
