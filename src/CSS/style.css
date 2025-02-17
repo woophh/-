@@ -1,0 +1,89 @@
+@import url("fonts.css");
+@import "tailwindcss";
+
+@theme {
+  --color-midnight:       #292E3D;
+  --color-midnight-02:    rgba(41,	46, 61, 0.2);
+  --color-light-yellow:   #EEA734;
+  --color-white-0.2:      rgba(255, 255, 255, 0.2);
+  --color-solitude:       #F2F3F6;
+  --color-solitude-2:     #E2E7F5;
+  --color-koromiko:       #F8B64C;
+  --color-grey:           #818181;
+  --color-grey-2:         #7B7B7B;
+  --color-dark-gray:      #A8A8A8;
+  --color-black-pearl:    #010E16;
+  --color-snow:           #F9F9F9;
+  --font-montserrat:      "Montserrat", serif;
+  --font-dream:           "Dreamcast", serif;
+  --font-rawline:         "Rawline", sans-serif;
+}
+
+@layer utilities {
+  html {
+    font-family: "Rawline", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88.59px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    @media (width >= 40rem /* 640px */) {
+        max-width: 40rem /* 640px */;
+    }
+    @media (width >= 48rem /* 768px */) {
+        max-width: 48rem /* 768px */;
+    }
+    @media (width >= 64rem /* 1024px */) {
+        max-width: 64rem /* 1024px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+        max-width: 80rem /* 1280px */;
+    }
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 96rem /* 1536px */;
+    }
+    @media (width >= 113rem /* 1808px */) {
+      max-width: 113rem /* 1808px */;
+  }
+  }
+}
+
+.banner::before {
+  content: '';
+  width: 660px;
+  height: 450px;
+  background-color: #292E3D;
+  opacity: 0.8;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: -12%;
+  z-index: 4;
+  border-radius: 50%;
+}
+
+.banner-block::after {
+  content: '';
+  width: 820px;
+  height: 400px;
+  background-color: #292E3D;
+  opacity: 0.7;
+  filter: blur(60px);
+  position: absolute;
+  bottom: -15%;
+  right: -9%;
+  z-index: 9;
+  border-radius: 50%;
+}
+
+.custom-grid {
+  grid-template-columns: 1fr 114px 266px 1fr 1fr;
+}

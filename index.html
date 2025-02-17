@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="overflow-hidden relative">
+      <div class="bg-midnight pt-10 rounded-b-[50px] text-white mb-[140px]">
+        <header class="container mx-auto p-5 flex items-center justify-between font-medium gap-5 relative z-5">
+          <img src="#" alt="Логотип" class="w-44 h-14">
+          <div class="flex items-center gap-5 w-[65%] justify-between">
+            <a href="#functions" class="text-xl">Функциональность</a>
+            <a href="#integrations" class="text-xl">Интеграция</a>
+            <a href="#tariffs" class="text-xl">Тарифы</a>
+            <a href="#" class="text-xl">Демо-версия</a>
+            <a href="#faq" class="text-xl">FAQ</a>
+            <a href="#contacts" class="text-xl">Контакты</a>
+          </div>
+          <button class="bg-white text-midnight rounded-[46px] min-w-44 p-[16px]">Связаться</button>
+        </header>
+        <section class="container mx-auto relative">
+          <img src="public/image/bg-line-1.svg" alt="Линия декоративная" aria-hidden="true" class="absolute top-[-3%] left-[-2%]
+          z-3 h-[100%] min-w-[1523px]">
+          <div class="banner grid grid-cols-2 grid-rows-[560px_minmax(420px,_1fr)_100px] h-[calc(100vh-135px)] min-h-[945px] justify-between">
+            <h1 class="text-[64px] row-span-1 flex items-end mb-10 relative z-5 pl-10">Удобное электронное меню для ресторанов и&nbsp;кафе</h1>
+            <img src="public/image/app-1.png" alt="Демонстрация приложения"
+            class="row-start-1 col-start-2 relative z-10 h-[995px] w-[759px]">
+            <div class="banner-block flex relative mb-10 col-start-1 col-end-3 flex-col items-start justify-around p-10 pr-[780px] z-9 
+            bg-white-0.2 rounded-[50px] backdrop-blur-xs">
+              <p class="text-[32px] font-montserrat">Интуитивно понятное приложение,
+                которое привлекает клиентов и&nbsp;упрощает процесс заказа</p>
+                <div class="flex gap-5">
+                  <a href="#" class="rounded-[46px] p-4 min-w-[260px] bg-midnight text-center">Узнать больше</a>
+                  <button class="rounded-[46px] p-4 min-w-[260px] bg-light-yellow text-center">Заказать демо</button>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="about" class="container mx-auto mb-32 flex flex-col items-center">
+        <h2 class="mb-[60px]">О продукте</h2>
+        <p class="mb-10 text-4xl max-w-[1140px] text-black text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error sunt facilis laboriosam? Impedit cupiditate.</p>
+        <p class="mb-16 text-2xl max-w-[960px] text-black text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis provident a excepturi mollitia ratione incidunt ut, sit delectus, repudiandae nemo, rem harum neque non optio laboriosam inventore consequatur voluptate.</p>
+        <ul class="flex flex-row flex-wrap gap-9 justify-center items-center font-bold">
+          <li class="bg-solitude p-5 rounded-3xl flex items-center flex-row gap-5 ease-in duration-[0.3s] hover:-translate-y-1.5 hover:bg-solitude-2">
+            <img class="w-[80px] h-[80px] rounded-[20px] bg-white p-5" src="public/image/icon/icon-bar.svg" alt="Иконка коктейля" aria-hidden="true">
+            <span class="text-2xl text-midnight">Для баров</span>
+          </li>
+          <li class="bg-solitude p-5 rounded-3xl flex items-center flex-row gap-5 ease-in duration-[0.3s] hover:-translate-y-1.5 hover:bg-solitude-2">
+            <img class="w-[80px] h-[80px] rounded-[20px] bg-white p-5" src="public/image/icon/icon-restaurant.svg" alt="Иконка подноса" aria-hidden="true">
+            <span class="text-2xl text-midnight">Для ресторанов</span>
+          </li>
+          <li class="bg-solitude p-5 rounded-3xl flex items-center flex-row gap-5 ease-in duration-[0.3s] hover:-translate-y-1.5 hover:bg-solitude-2">
+            <img class="w-[80px] h-[80px] rounded-[20px] bg-white p-5" src="public/image/icon/icon-club.svg" alt="Иконка диско-шара" aria-hidden="true">
+            <span class="text-2xl text-midnight">Для клубов</span>
+          </li>
+          <li class="bg-solitude p-5 rounded-3xl flex items-center flex-row gap-5 ease-in duration-[0.3s] hover:-translate-y-1.5 hover:bg-solitude-2">
+            <img class="w-[80px] h-[80px] rounded-[20px] bg-white p-5" src="public/image/icon/icon-hookah.svg" alt="Иконка облаков" aria-hidden="true">
+            <span class="text-2xl text-midnight">Для кальянных</span>
+          </li>
+          <li class="bg-solitude p-5 rounded-3xl flex items-center flex-row gap-5 ease-in duration-[0.3s] hover:-translate-y-1.5 hover:bg-solitude-2">
+            <img class="w-[80px] h-[80px] rounded-[20px] bg-white p-5" src="public/image/icon/icon-coffeehouse.svg" alt="Иконка чашки" aria-hidden="true">
+            <span class="text-2xl text-midnight">Для кофеен</span>
+          </li>
+        </ul>
+      </section>
+      <section id="functions" class="relative">
+        <h2 class="mb-[60px]">Основные функции</h2>
+        <img src="public/image/bg-line-2.svg" alt="Линия декоративная" aria-hidden="true" class="absolute z-[-1] top-0 left-0 w-[100%]">
+        <div class="grid grid-cols-3 grid-rows-2 gap-5 container mx-auto items-center justify-items-center mb-[250px]">
+          <div class="bg-midnight rounded-[48px] p-8 flex flex-col justify-between min-h-[256px] w-[351px] relative top-[-12%] right-[-7%]">
+            <img src="public/image/icon/icon-bag.svg" alt="Иконка сумки" class="bg-koromiko rounded-[50%] p-[25px] w-[74px] h-[74px]">
+            <span class="text-2xl text-white">Интеграция с&nbsp;вашим заведением</span>
+          </div>
+          <div class="bg-midnight rounded-[48px] p-8 flex flex-col justify-between min-h-[256px] w-[422px] relative left-[-6%]">
+            <img src="public/image/icon/icon-bag.svg" alt="Иконка сумки" class="bg-koromiko rounded-[50%] p-[25px] w-[74px] h-[74px]">
+            <span class="text-2xl text-white">Добавление и&nbsp;удаление товаров в&nbsp;пару кликов</span>
+          </div>
+          <div class="col-start-2 col-end-3 row-start-1 row-end-3 relative">
+            <img src="public/image/app-2.png" alt="Демонстрация приложения" class="w-[353px] h-[849px]">
+            <img src="public/image/app-part-1.jpg" alt="Изображение блюда" class="absolute w-[217px] h-[173px] bottom-[3%] right-[-24%]">
+            <img src="public/image/app-part-2.png" alt="Изображение блюда" class="absolute w-[102px] h-[103px] top-[28.5%] right-[-15%]">
+            <span class="bg-light-yellow rounded-2xl min-w-[158px] p-2 text-center text-white absolute top-[49%] text-[28px]">20&nbsp;% скидка</span>
+          </div>
+          <div class="bg-midnight rounded-[48px] p-8 flex flex-col justify-between min-h-[256px] w-[377px] relative left-[20%]">
+            <img src="public/image/icon/icon-bag.svg" alt="Иконка сумки" class="bg-koromiko rounded-[50%] p-[25px] w-[74px] h-[74px]">
+            <span class="text-2xl text-white">Простое управление через админ-панель</span>
+          </div>
+          <div class="bg-midnight rounded-[48px] p-8 flex flex-col justify-between min-h-[256px] w-[300px]">
+            <img src="public/image/icon/icon-bag.svg" alt="Иконка сумки" class="bg-koromiko rounded-[50%] p-[25px] w-[74px] h-[74px]">
+            <span class="text-2xl text-white">QR-меню без сложностей</span>
+          </div>
+        </div>
+      </section>
+      <section id="advantages" class="container mx-auto mb-[180px]">
+        <h2 class="mb-10">Преимущества</h2>
+        <div class="grid custom-grid grid-rows-2 gap-5 justify-items-center relative">
+          <div class="flex px-4 pt-[23px] bg-light-yellow rounded-[40px]"><img src="public/image/app-4.png" alt="Демонстрация приложения"></div>
+          <div class="rounded-[40px] flex flex-col justify-between gap-5 px-[28px] pt-[32px] pb-[28px] bg-solitude col-span-2">
+            <h3 class="font-semibold text-[28px]">Экономия времени и&nbsp;средств</h3>
+            <p class="text-xl">Быстрое и&nbsp;дешевое обновление меню без необходимости перепечатывать бумажные версии</p>
+          </div>
+          <div class="rounded-[40px] flex flex-col justify-between gap-5 px-[28px] pt-[32px] pb-[28px] bg-solitude">
+            <h3 class="font-semibold text-[28px]">Повышение качества обслуживания</h3>
+            <p class="text-xl">Сокращение времени на&nbsp;оформление заказов и&nbsp;улучшение взаимодействия с&nbsp;клиентами</p>
+          </div>
+          <div class="rounded-[40px] flex flex-col justify-between gap-5 px-[28px] pt-[32px] pb-[28px] bg-solitude col-start-1 col-end-3">
+            <h3 class="font-semibold text-[28px]">Удобство обновления меню и&nbsp;внедрения спецпредложений</h3>
+            <p class="text-xl">Мгновенные изменения в&nbsp;реальном времени, акционные предложения всегда на&nbsp;виду</p>
+          </div>
+          <div class="rounded-[40px] flex flex-col justify-between gap-5 px-[28px] pt-[32px] pb-[28px] bg-midnight text-white
+          col-start-3 col-end-6 row-start-2 row-end-3 pr-[56%] relative">
+            <h3 class="font-semibold text-[28px]">Увеличение клиентской лояльности</h3>
+            <p class="text-xl">Создание комфортных условий для гостей, которые могут легко и&nbsp;быстро сделать заказ, улучшая общий опыт посещения</p>
+            <img src="public/image/bg-line-3.svg" alt="Линия декоративная" aria-hidden="true" class="absolute top-[1%] right-[1%]">
+          </div>
+          <img src="public/image/app-3.png" alt="Демонстрация приложения" class="absolute z-1 top-[-26%] right-0">
+        </div>
+      </section>
+      <section id="steps" class="bg-solitude py-[92px] relative overflow-hidden mb-[240px]">
+        <img src="public/image/bg-line-4.svg" alt="Линия декоративная" aria-hidden="true" class="absolute top-[-7%] right-[1%] w-[100%] h-full">
+        <div class="container mx-auto relative z-[1]">
+          <h2 class="mb-[38px]">Как это работает?</h2>
+          <div class="flex justify-center items-center gap-28">
+            <img src="public/image/app-5.png" alt="Демонтрация приложения">
+            <ol class="flex flex-col gap-5">
+              <li class="flex flex-col items-center p-10 bg-white rounded-[40px] max-w-[480px]">
+                <span class="bg-light-yellow rounded-[50%] flex text-white mb-5 w-[73px] h-[73px] pt-[9px] pb-[16px] justify-center text-5xl">1</span>
+                <p class="text-3xl text-center">Сканируйте QR-код на&nbsp;столе клиента</p>
+              </li>
+              <li class="flex flex-col items-center p-10 bg-white rounded-[40px] max-w-[480px]">
+                <span class="bg-light-yellow rounded-[50%] flex text-white mb-5 w-[73px] h-[73px] pt-[9px] pb-[16px] justify-center text-5xl">2</span>
+                <p class="text-3xl text-center">Сканируйте QR-код на&nbsp;столе клиента</p>
+              </li>
+              <li class="flex flex-col items-center p-10 bg-white rounded-[40px] max-w-[480px]">
+                <span class="bg-light-yellow rounded-[50%] flex text-white mb-5 w-[73px] h-[73px] pt-[9px] pb-[16px] justify-center text-5xl">3</span>
+                <p class="text-3xl text-center">Сканируйте QR-код на&nbsp;столе клиента</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="integrations" class="container mx-auto mb-[240px] relative">
+        <h2 class="mb-[70px]">Интеграции</h2>
+        <div class="absolute bg-midnight rounded-[40px] w-[49%] h-[602px] -z-2 top-[18%] left-0">
+          <img src="public/image/app-6.png" alt="Демонстрация приложения" class="absolute bottom-0 left-[9%]">
+          <img src="public/image/bg-line-5.svg" alt="Линия декоративная" aria-hidden="true" class="absolute top-[-7%] right-[1%] w-[100%] -z-1">
+        </div>
+        <div class="pl-[42%]">
+          <ul class="flex flex-col gap-7 mb-[55px]">
+            <li class="flex bg-solitude rounded-3xl p-5 justify-between items-center">
+              <div class="flex flex-row items-center gap-5">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="p-5 bg-white rounded-[20px]">
+                <span class="font-semibold text-[28px] max-w-[140px]">CRM</span>
+              </div>
+              <p class="max-w-[55%] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+            <li class="flex bg-solitude rounded-3xl p-5 justify-between items-center">
+              <div class="flex flex-row items-center gap-5">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="p-5 bg-white rounded-[20px]">
+                <span class="font-semibold text-[28px] max-w-[140px]">Кассы</span>
+              </div>
+              <p class="max-w-[55%] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+            <li class="flex bg-solitude rounded-3xl p-5 justify-between items-center">
+              <div class="flex flex-row items-center gap-5">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="p-5 bg-white rounded-[20px]">
+                <span class="font-semibold text-[28px] max-w-[140px]">Учетные системы</span>
+              </div>
+              <p class="max-w-[55%] text-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </li>
+          </ul>
+          <div class="flex pl-[220px] justify-between items-center">
+            <img src="public/image/icon/icon-arrow-right.svg" alt="Стрелка вправо" aria-hidden="true"
+            class="bg-midnight py-[15px] px-[30px] rounded-[42px]">
+            <button class="rounded-[46px] p-4 min-w-[260px] bg-light-yellow text-center text-white">Заказать демо</button>
+          </div>
+        </div>
+      </section>
+      <section id="tariffs" class="container mx-auto mb-[192px]">
+        <h2 class="mb-10">Тарифы</h2>
+        <ul class="flex gap-5 w-full justify-between">
+          <li class="flex flex-col items-start rounded-[40px] bg-solitude p-8 pt-[48px] max-w-[540px]">
+            <h3 class="text-[40px] mb-[20px]">Базовый</h3>
+            <span class="text-2xl mb-[43px] text-grey">Подходит для lorem ipsum dolor sit amet consectetur</span>
+            <div class="flex flex-row gap-3 items-baseline pb-[9px] border-b mb-[34px] border-midnight-02 w-full">
+              <span class="text-[64px] text-midnight">3 000 руб.</span>
+              <span class="text-2xl text-black-pearl">/мес</span>
+            </div>
+            <ul class="flex flex-col gap-5 mb-[52px]">
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+            </ul>
+            <button class="w-full p-4 bg-midnight text-center rounded-[46px] text-white mt-[auto]">Узнать больше</button>
+          </li>
+          <li class="flex flex-col items-start rounded-[40px] bg-midnight text-white p-8 pt-[48px] max-w-[540px]">
+            <h3 class="text-[40px] mb-[20px]">Оптимальный</h3>
+            <span class="text-2xl mb-[43px] text-dark-gray">Подходит для lorem ipsum dolor sit amet consectetur</span>
+            <div class="flex flex-row gap-3 items-baseline pb-[9px] border-b mb-[34px] border-grey-2 w-full">
+              <span class="text-[64px]">3 000 руб.</span>
+              <span class="text-2xl text-snow">/мес</span>
+            </div>
+            <ul class="flex flex-col gap-5 text-snow mb-[52px]">
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+            </ul>
+            <button class="w-full p-4 bg-light-yellow text-center rounded-[46px] text-white mt-[auto]">Узнать больше</button>
+          </li>
+          <li class="flex flex-col items-start rounded-[40px] bg-solitude p-8 pt-[48px] max-w-[540px]">
+            <h3 class="text-[40px] mb-[20px]">Премиум</h3>
+            <span class="text-2xl mb-[43px] text-grey">Подходит для lorem ipsum dolor sit amet consectetur</span>
+            <div class="flex flex-row gap-3 items-baseline pb-[9px] border-b mb-[34px] border-midnight-02 w-full">
+              <span class="text-[64px] text-midnight">3 000 руб.</span>
+              <span class="text-2xl text-black-pearl">/мес</span>
+            </div>
+            <ul class="flex flex-col gap-5 mb-[52px]">
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+              <li class="flex flex-row gap-5 items-start">
+                <img src="public/image/icon/icon-check.svg" alt="Иконка галочки" class="w-[39px] h-[39px] mt-1">
+                <p class="text-[20px]">Сокращение времени на оформление заказов и улучшение взаимодействия с клиентами</p>
+              </li>
+            </ul>
+            <button class="w-full p-4 bg-midnight text-center rounded-[46px] text-white mt-[auto]">Узнать больше</button>
+          </li>
+        </ul>
+      </section>
+      <section id="faq" class="container mx-auto mb-[160px]">
+        <h2 class="mb-[60px]"> Ответим на частые вопросы</h2>
+        <ul class="flex flex-col gap-5">
+          <!-- Аккордеон  -->
+        </ul>
+      </section>
+      <section class="conteiner mx-auto mb-[124px]">
+        <div class="bg-midnight py-[72px] px-[28px] flex flex-col items-center max-w-[1192px] mx-auto rounded-[60px]">
+          <h2 class="mb-5 text-white">Запустите E-menu прямо сейчас, чтобы увидеть его работу</h2>
+          <div class="flex gap-5">
+            <button class="rounded-[46px] p-4 min-w-[260px] bg-solitude text-midnight text-[20px]">Подключите сейчас</button>
+            <button class="rounded-[46px] p-4 min-w-[348px] bg-light-yellow text-white text-[20px]">Запросить демонстрацию</button>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="relative bg-solitude">
+        <img src="public/image/bg-line-6.svg" alt="Линия декоративная" aria-hidden="true" class="absolute top-[12%] right-[1%] w-[100%] z-0">
+        <div class="container mx-auto">
+          <h2 class="mb-7">Контакты</h2>
+          <div class="flex flex-col gap-5 items-center text-2xl">
+            <a href="mailto:#">mail@mail.ru</a>
+            <a href="tel:#">+7 (000) 000-00-00</a>
+            <span>Улица, город, страна</span>
+          </div>
+          <img src="public/image/app-7.png" alt="Демонстрация приложения" class="mx-auto relative z-1">
+        </div>
+      </section>
+      <footer class="bg-solitude relative z-2">
+        <div class="bg-midnight rounded-t-[60px] pt-[122px] pb-[60px] px-[130px] flex flex-col">
+          <img src="#" alt="Логотип" class="mb-[98px]">
+          <div class="flex flex-row justify-between pb-[95px] mb-[67px] border-b-1 border-gray-2 text-snow">
+            <span class="max-w-[375px] text-2xl">EMenu&nbsp;&mdash; система управления электронным меню для заведений с&nbsp;поддержкой QR-кодов.</span>
+            <div class="grid grid-cols-2 gap-x-[90px] gap-y-5 text-[20px] text-white">
+              <a href="#functions">Функциональность</a>
+              <a href="#">Демо-версия</a>
+              <a href="#integrations">Интеграция</a>
+              <a href="#faq">FAQ</a>
+              <a href="#tariffs">Тарифы</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+            <div class="flex flex-col gap-5 text-[20px] text-snow">
+              <a href="mailto:#">Email: support@emenu.com</a>
+              <a href="tel:#">Телефон: +1 234 567 890 </a>
+              <span>Адрес: Улица, Город, Страна</span>
+            </div>
+          </div>
+          <span class="text-[16px] text-snow ml-auto">
+            2024&nbsp;EMenu. Все права защищены&nbsp;| Политика конфиденциальности&nbsp;| Условия использования
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/JS/main.js"></script>
+  </body>
+</html>
