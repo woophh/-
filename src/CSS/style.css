@@ -21,11 +21,12 @@
 
 @layer utilities {
   html {
-    font-family: "Rawline", sans-serif;
+    font-family: "Montserrat", serif;
     scroll-behavior: smooth;
   }
 
   h2 {
+    font-family: "Dreamcast", serif;
     font-weight: 400;
     font-size: 64px;
     line-height: 88.59px;
@@ -50,8 +51,8 @@
     @media (width >= 96rem /* 1536px */) {
         max-width: 96rem /* 1536px */;
     }
-    @media (width >= 113rem /* 1808px */) {
-      max-width: 113rem /* 1808px */;
+    @media (width >= 1660px) {
+      max-width: 1660px;
   }
   }
 }
@@ -85,10 +86,48 @@
 }
 
 .custom-grid {
-  grid-template-columns: 1fr 114px 266px 1fr 1fr;
+  grid-template-columns: 1fr 120px 260px 1fr 1fr;
 }
 
 .custom-grid-1 {
   grid-template-rows: auto 450px;
   max-height: 1167px;
+}
+
+.plus {
+  animation: opacity linear 0.2s;
+}
+
+.minus {
+  animation: opacity linear 0.2s;
+}
+.active .plus {
+  display: none;
+  opacity: 0;
+}
+
+.active .minus {
+  display: block;
+  opacity: 1;
+}
+
+.panel {
+  max-height: 0;
+  opacity: 0;
+
+  transition: opacity ease-in 0.1s,
+  max-height ease-in 0.2s 0.1s;
+}
+
+.active ~ .panel {
+  transition: opacity ease-in 0.1s 0.15s,
+  max-height ease-in 0.2s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }
