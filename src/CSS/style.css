@@ -4,6 +4,7 @@
 @theme {
   --color-midnight:       #292E3D;
   --color-midnight-02:    rgba(41,	46, 61, 0.2);
+  --color-midnight-05:    rgba(41,	46, 61, 0.5);
   --color-light-yellow:   #EEA734;
   --color-white-0.2:      rgba(255, 255, 255, 0.2);
   --color-solitude:       #F2F3F6;
@@ -67,6 +68,18 @@
       max-width: 1660px;
   }
   }
+}
+
+.burger {
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease-in 0.2s;
+}
+
+.burger-active {
+  opacity: 1;
+  pointer-events: all;
+  transition: all ease-in 0.2s;
 }
 
 .banner::before {
