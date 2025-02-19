@@ -85,7 +85,7 @@
   }
 }
 
-.banner-block::after {
+/* .banner-block::after {
   @media (width >= 64rem) {
     content: '';
     width: 1200px;
@@ -99,7 +99,7 @@
     z-index: 9;
     border-radius: 50%;
   }
-}
+} */
 
 .custom-grid {
   grid-template-columns: 1fr;
@@ -119,8 +119,7 @@
   
   @media (width >= 64rem) {
     grid-template-rows: auto 450px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-height: 1167px;
+    grid-template-columns: auto 457px;
   }
 }
 
