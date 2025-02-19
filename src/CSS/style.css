@@ -82,6 +82,41 @@
   transition: all ease-in 0.2s;
 }
 
+.burger-btn--1{
+  transition: top ease-in 0.2s 0.3s,
+    background-color linear 0.1s 0.2s,
+    transform ease-in 0.2s;
+}
+
+.burger-btn--2{
+  transition: bottom ease-in 0.2s 0.3s,
+    background-color linear 0.1s 0.2s,
+    transform ease-in 0.2s;
+
+}
+
+.burger-active ~ .burger-btn .burger-btn--1 {
+  top: 50%;
+  transform: rotate(45deg);
+  background-color: #F8B64C;
+  transform-origin: center;
+
+  transition: top ease-in 0.2s,
+    background-color linear 0.1s 0.2s,
+    transform ease-in 0.2s 0.3s;
+}
+
+.burger-active ~ .burger-btn .burger-btn--2 {
+  bottom: 50%;
+  transform: rotate(-45deg);
+  background-color: #F8B64C;
+  transform-origin: center;
+
+  transition: bottom ease-in 0.2s,
+    background-color linear 0.1s 0.2s,
+    transform ease-in 0.2s 0.3s;
+}
+
 .banner::before {
   @media (width >= 64rem) {
     content: '';
