@@ -121,9 +121,9 @@
 }
 
 .custom-grid-1 {
-  grid-template-rows: auto auto 350px auto;
   grid-template-columns: auto;
-  
+  grid-template-rows: repeat(5, auto);
+
   @media (width >= 64rem) {
     grid-template-rows: auto 20px 450px;
     grid-template-columns: auto 457px;
