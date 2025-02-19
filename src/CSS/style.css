@@ -78,7 +78,7 @@
     opacity: 0.8;
     filter: blur(10px);
     position: absolute;
-    top: 0;
+    top: -16%;
     left: -12%;
     z-index: 4;
     border-radius: 50%;
