@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: 'Dreamcast';
-    font-style: normal;
-    font-weight: normal;
-    font-weight: 500;
-    src: url("../../public/fonts/dreamcast.ttf");
+  font-family: 'Dreamcast';
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 500;
+  src: url('/fonts/dreamcast.ttf');
 }
 
 @font-face {
-    font-family: 'Rawline';
-    font-style: normal;
-    font-weight: normal;
-    font-weight: 400;
-    src: url("../../public/fonts/rawline-400.woff");
+  font-family: 'Rawline';
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+  src: url('/fonts/rawline-400.woff');
 }
 
 @font-face {
-    font-family: 'Rawline';
-    font-style: normal;
-    font-weight: normal;
-    font-weight: 700;
-    src: url("../../public/fonts/rawline-700.woff");
+  font-family: 'Rawline';
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 700;
+  src: url('/fonts/rawline-700.woff');
 }
 /* 400 700 raw */

@@ -1,30 +1,30 @@
-@import url("fonts.css");
-@import "tailwindcss";
+@import url('fonts.css');
+@import 'tailwindcss';
 
 @theme {
-  --color-midnight:       #292E3D;
-  --color-midnight-02:    rgba(41,	46, 61, 0.2);
-  --color-midnight-05:    rgba(41,	46, 61, 0.5);
-  --color-light-yellow:   #EEA734;
-  --color-white-0.2:      rgba(255, 255, 255, 0.2);
-  --color-solitude:       #F2F3F6;
-  --color-solitude-2:     #E2E7F5;
-  --color-koromiko:       #F8B64C;
-  --color-grey:           #818181;
-  --color-grey-2:         #7B7B7B;
-  --color-dark-gray:      #A8A8A8;
-  --color-black-pearl:    #010E16;
-  --color-snow:           #F9F9F9;
-  --color-black-russian:  #171C2B;
-  --color-orange:         #E3981F;
-  --font-montserrat:      "Montserrat", serif;
-  --font-dream:           "Dreamcast", serif;
-  --font-rawline:         "Rawline", sans-serif;
+  --color-midnight: #292e3d;
+  --color-midnight-02: rgba(41, 46, 61, 0.2);
+  --color-midnight-05: rgba(41, 46, 61, 0.5);
+  --color-light-yellow: #eea734;
+  --color-white-0.2: rgba(255, 255, 255, 0.2);
+  --color-solitude: #f2f3f6;
+  --color-solitude-2: #e2e7f5;
+  --color-koromiko: #f8b64c;
+  --color-grey: #818181;
+  --color-grey-2: #7b7b7b;
+  --color-dark-gray: #a8a8a8;
+  --color-black-pearl: #010e16;
+  --color-snow: #f9f9f9;
+  --color-black-russian: #171c2b;
+  --color-orange: #e3981f;
+  --font-montserrat: 'Montserrat', serif;
+  --font-dream: 'Dreamcast', serif;
+  --font-rawline: 'Rawline', sans-serif;
 }
 
 @layer utilities {
   html {
-    font-family: "Rawline", sans-serif;
+    font-family: 'Rawline', sans-serif;
     /* scroll-behavior: smooth; */
   }
 
@@ -50,70 +50,85 @@
   .container {
     width: 100%;
     @media (width >= 40rem /* 640px */) {
-        max-width: 40rem /* 640px */;
+      max-width: 40rem /* 640px */;
     }
     @media (width >= 48rem /* 768px */) {
-        max-width: 48rem /* 768px */;
+      max-width: 48rem /* 768px */;
     }
     @media (width >= 64rem /* 1024px */) {
-        max-width: 64rem /* 1024px */;
+      max-width: 64rem /* 1024px */;
     }
     @media (width >= 80rem /* 1280px */) {
-        max-width: 80rem /* 1280px */;
+      max-width: 80rem /* 1280px */;
     }
     @media (width >= 96rem /* 1536px */) {
-        max-width: 96rem /* 1536px */;
+      max-width: 96rem /* 1536px */;
     }
     @media (width >= 1660px) {
       max-width: 1660px;
-  }
+    }
   }
 }
 
 .burger {
   opacity: 0;
   pointer-events: none;
-  transition: all ease-in 0.2s;
+  transition: opacity ease-in 0.1s 0.25s;
+}
+
+.burder-wrapper {
+  transform: translateX(100%);
+  transition: transform ease-in 0.3s 0.05s;
+}
+
+.burger-links {
+  opacity: 0;
+  transition: opacity ease-in 0.1s;
 }
 
 .burger-active {
   opacity: 1;
   pointer-events: all;
-  transition: all ease-in 0.2s;
+  transition: opacity ease-in 0.1s;
 }
 
-.burger-btn--1{
-  transition: top ease-in 0.2s 0.3s,
-    background-color linear 0.1s 0.2s,
+.burger-active .burder-wrapper {
+  transform: translateX(0);
+  transition: transform ease-in 0.3s;
+}
+
+.burger-active .burger-links {
+  opacity: 1;
+  transition: opacity ease-in 0.1s 0.25s;
+}
+
+.burger-btn--1 {
+  transition: top ease-in 0.2s 0.3s, background-color linear 0.1s 0.2s,
     transform ease-in 0.2s;
 }
 
-.burger-btn--2{
-  transition: bottom ease-in 0.2s 0.3s,
-    background-color linear 0.1s 0.2s,
+.burger-btn--2 {
+  transition: bottom ease-in 0.2s 0.3s, background-color linear 0.1s 0.2s,
     transform ease-in 0.2s;
-
 }
 
 .burger-active ~ .burger-btn .burger-btn--1 {
   top: 50%;
   transform: rotate(45deg);
-  background-color: #F8B64C;
+  background-color: #f8b64c;
   transform-origin: center;
 
-  transition: top ease-in 0.2s,
-    background-color linear 0.1s 0.2s,
+  transition: top ease-in 0.2s, background-color linear 0.1s 0.2s,
     transform ease-in 0.2s 0.3s;
 }
 
 .burger-active ~ .burger-btn .burger-btn--2 {
   bottom: 50%;
   transform: rotate(-45deg);
-  background-color: #F8B64C;
+  background-color: #f8b64c;
   transform-origin: center;
 
-  transition: bottom ease-in 0.2s,
-    background-color linear 0.1s 0.2s,
+  transition: bottom ease-in 0.2s, background-color linear 0.1s 0.2s,
     transform ease-in 0.2s 0.3s;
 }
 
@@ -122,7 +137,7 @@
     content: '';
     width: 660px;
     height: 450px;
-    background-color: #292E3D;
+    background-color: #292e3d;
     opacity: 0.8;
     filter: blur(10px);
     position: absolute;
@@ -136,7 +151,7 @@
 .banner-block::after {
   @media (width >= 64rem) {
     content: '';
-    background-color: #292E3D;
+    background-color: #292e3d;
     opacity: 0.7;
     filter: blur(60px);
     position: absolute;
@@ -159,11 +174,11 @@
 .custom-grid {
   grid-template-columns: 1fr;
 
-  @media (width >= 64rem) { 
+  @media (width >= 64rem) {
     grid-template-columns: repeat(3, auto);
-   }
+  }
 
-   @media (width >= 96rem) { 
+  @media (width >= 96rem) {
     grid-template-columns: 1fr 120px 260px 1fr 1fr;
   }
 }
@@ -177,10 +192,10 @@
     grid-template-columns: auto 457px;
   }
 
-  @media (width >= 96rem) { 
+  @media (width >= 96rem) {
     grid-template-columns: auto 717px;
     grid-template-rows: auto 450px;
-   }
+  }
 }
 
 .plus {
@@ -205,19 +220,23 @@
   max-height: 0;
   opacity: 0;
 
-  transition: opacity ease-in 0.1s,
-  max-height ease-in 0.2s 0.1s;
+  transition: opacity ease-in 0.1s, max-height ease-in 0.2s 0.1s;
 }
 
 .active ~ .panel {
-  transition: opacity ease-in 0.1s 0.15s,
-  max-height ease-in 0.2s;
+  transition: opacity ease-in 0.1s 0.15s, max-height ease-in 0.2s;
+}
+
+.stop-scrolling {
+  height: 100% !important;
+  overflow: hidden !important;
 }
 
 @keyframes opacity {
   from {
     opacity: 0;
-  } to {
+  }
+  to {
     opacity: 1;
   }
 }
